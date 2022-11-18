@@ -8,6 +8,8 @@ class Product(models.Model):
     description = models.TextField()
     price = models.CharField(max_length=255)
     availability = models.CharField(max_length=255)
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
+    image = models.ImageField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
