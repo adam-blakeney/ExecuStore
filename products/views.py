@@ -8,8 +8,8 @@ from .forms import ProductForm
 def all_products(request):
     products = Product.objects.all()
 
-    data = {
+    context = {
         'products': products
     }
 
-    return render(request, 'base.html', data)
+    return render(request, 'products/products.html', context)
