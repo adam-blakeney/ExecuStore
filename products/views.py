@@ -8,6 +8,7 @@ from .forms import ProductForm
 
 def all_products(request):
     products = Product.objects.all()
+    query = None
 
     if request.GET:
         if 'q' in request.GET:
@@ -20,7 +21,8 @@ def all_products(request):
             products = products.filter(queries)
 
     context = {
-        'products': products
+        'products': products,
+        'search_term': query,
     }
 
     return render(request, 'products/products.html', context)
