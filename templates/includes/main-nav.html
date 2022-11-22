@@ -29,9 +29,9 @@
                 Timepieces
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="timepieces-link">
-                <a href="" class="dropdown-item">Timeless</a>
-                <a href="" class="dropdown-item">Exclusive</a>
-                <a href="" class="dropdown-item">All Timepieces</a>
+                <a href="{% url 'products' %}?category=timeless" class="dropdown-item">Timeless</a>
+                <a href="{% url 'products' %}?category=exclusive" class="dropdown-item">Exclusive</a>
+                <a href="{% url 'products' %}?category=timeless,exclusive" class="dropdown-item">All Timepieces</a>
             </div>
         </li>
 
@@ -40,9 +40,9 @@
                 Special Items
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Pieces</a>
-                <a href="" class="dropdown-item">Event Items</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_pieces" class="dropdown-item">New Pieces</a>
+                <a href="{% url 'products' %}?category=event_items" class="dropdown-item">Event Items</a>
+                <a href="{% url 'products' %}?category=new_pieces,event_items" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>

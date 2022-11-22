@@ -5,7 +5,7 @@ from .models import Product, Category
 class ProductForm(forms.ModelForm):
 
     class Meta:
-        model = Products
+        model = Product
         fields = '__all__'
 
     def __init__(self, *args, **kwargs):
