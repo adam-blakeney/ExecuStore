@@ -115,3 +115,12 @@ a.category-badge > span.badge:hover {
         height: calc(100vh - 116px);
     }
 }
+
+
+/*-------------added at end for aesthetic upgrade*/
+
+.product-shipping {
+    color: grey;
+    font-weight: 200;
+}
+
