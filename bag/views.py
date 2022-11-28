@@ -52,7 +52,7 @@ def remove_from_bag(request, item_id):
         product = Product.objects.get(pk=item_id)
         bag = request.session.get('bag', {})
         bag.pop(item_id)
-        messages.success(request, f'{product.name} has been removed')
+        messages.info(request, f'{product.name} has been removed')
 
         request.session['bag'] = bag
         return HttpResponse(status=200)
