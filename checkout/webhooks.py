@@ -7,6 +7,8 @@ from checkout.webhook_handler import StripeWH_Handler
 
 import stripe
 
+"""code from stripe.com"""
+
 
 @require_POST
 @csrf_exempt
