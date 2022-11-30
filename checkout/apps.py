@@ -6,4 +6,4 @@ class CheckoutConfig(AppConfig):
     name = 'checkout'
 
     def ready(self):
-        import checkour.signals
+        import checkout.signals
