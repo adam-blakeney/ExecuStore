@@ -5,7 +5,7 @@ from django.dispatch import receiver
 
 from django_countries.fields import CountryField
 
-#userprofile model
+# userprofile model
 
 
 class UserProfile(models.Model):
