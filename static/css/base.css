@@ -2,11 +2,12 @@ html {
     height: 100%;
 }
 
+
 body {
     background: url('/media/homepage-image.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
+    color: #3F0D12;
     font-family: 'Lora';
     font-style: italic;
 }
@@ -29,8 +30,6 @@ body {
 }
 
 .shop-now-button {
-    background: black;
-    color: white;
     min-width: 260px;
 }
 
@@ -55,9 +54,6 @@ body {
     color: white;
 }
 
-.text-black {
-    color: #000 !important;
-}
 
 .border-black {
     border: 1px solid black !important;
@@ -261,10 +257,49 @@ input[name='q']::placeholder {
 }
 
 
-/*-------------added at end for aesthetic upgrade*/
+/*-------------product css*/
 
 .product-shipping {
     color: grey;
     font-weight: 200;
 }
 
+.size{
+    max-height: 250px;
+}
+
+
+.text-inform {
+    color: #002952 !important;
+}
+
+.text-color {
+    color: #3F0D12 !important;
+}
+
+.nav-header {
+    background-color: #C2C2C2;
+    color: #3F0D12! important;
+}
+
+.nav-link {
+    color: #3F0D12;
+}
+
+.main-logo-link {
+    font-family: 'Lora', sans-serif;
+    font-weight: 500;
+    color: #3F0D12! important;
+}
+
+.bg-color{
+    background-color: #C2C2C2;
+}
+
+.bg-color-dark{
+    background-color: #474747;
+}
+
+.navbar-color{
+    background-color: #C2C2C2;
+}
