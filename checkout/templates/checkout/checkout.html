@@ -14,12 +14,12 @@
 {% endblock %}
 
 {% block content %}
-<div class="overlay"></div>
+<div class="overlay back-color"></div>
 <div class="container">
     <div class="row">
         <div class="col">
             <hr>
-            <h2 class="logo-font mb-4">Your Reserved Items</h2>
+            <h2 class="logo-font mb-4 text-color">Your Reserved Items</h2>
             <hr>
         </div>
     </div>
@@ -47,12 +47,12 @@
                         <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                     </div>
                     <div class="col-3 text-right">
-                        <p class="my-0 small text-muted">${{ item.product.price }}</p>
+                        <p class="my-0 small text-muted">€{{ item.product.price }}</p>
                     </div>
                 </div>
             {% endfor %}
             <hr class="my-0">
-            <div class="row text-black text-right">
+            <div class="row text-color text-right">
                 <div class="col-7 offset-2">
                     <p class="my-0">Order Total:</p>
                     <p class="my-0">Delivery:</p>
@@ -61,7 +61,7 @@
                 <div class="col-3">
                     <p class="my-0">${{ total | floatformat:2 }}</p>
                     <p class="my-0">${{ delivery | floatformat:2 }}</p>
-                    <p class="my-0"><strong>${{ grand_total | floatformat:2 }}</strong></p>
+                    <p class="my-0"><strong>€{{ grand_total | floatformat:2 }}</strong></p>
                 </div>
             </div>
         </div>
@@ -70,7 +70,7 @@
             <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                 {% csrf_token %}
                 <fieldset class="rounded px-3 mb-5">
-                    <legend class="fieldset-label text-black px-2 w-auto">Details</legend>
+                    <legend class="fieldset-label text-color px-2 w-auto">Details</legend>
                     {{ order_form.full_name | as_crispy_field }}
                     {{ order_form.email | as_crispy_field }}
                 </fieldset>
@@ -118,11 +118,11 @@
                             <i class="fas fa-lock"></i>
                         </span>
                     </button>
-                    <p class="small text-black my-0">
+                    <p class="small text-color my-0">
                         <span class="icon">
                             <i class="fas fa-exclamation-circle"></i>
                         </span>
-                        <span class="text-muted">Your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
+                        <span class="text-muted">Your card will be charged <strong>€{{ grand_total|floatformat:2 }}</strong></span>
                     </p>
                 </div>
             </form>

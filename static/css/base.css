@@ -270,7 +270,7 @@ input[name='q']::placeholder {
 
 
 .text-inform {
-    color: #002952 !important;
+    color: #003D7A !important;
 }
 
 .text-color {
@@ -297,9 +297,13 @@ input[name='q']::placeholder {
 }
 
 .bg-color-dark{
-    background-color: #474747;
+    background-color: #666666;
 }
 
 .navbar-color{
     background-color: #C2C2C2;
+}
+
+.backcolor {
+    background-color: #E0E0E0;
 }

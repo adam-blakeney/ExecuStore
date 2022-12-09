@@ -54,3 +54,10 @@ select option[value=""] {
     height: 100%;
 }
 
+.back-color{
+  background-color: #E0E0E0;
+}
+
+.text-color{
+  color: #3F0D12;
+}
