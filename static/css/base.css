@@ -313,6 +313,7 @@ input[name='q']::placeholder {
 
 .info-container {
     background-color: #C2C2C2;
+    height: fit-content ;
 }
 
 .info-style {
@@ -343,4 +344,8 @@ footer{
 .team-photo {
     padding: 6rem;
     align-items: center;
+}
+
+.footer-height{
+    max-height: 500px;
 }
