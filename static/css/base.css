@@ -307,3 +307,40 @@ input[name='q']::placeholder {
 .backcolor {
     background-color: #E0E0E0;
 }
+
+
+/*------footer*/
+
+.info-container {
+    background-color: #C2C2C2;
+}
+
+.info-style {
+    padding: 6rem;
+    font-weight: 300;
+}
+
+.footer-style {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.footer-logo-link {
+    font-family: 'Lora', sans-serif;
+    font-weight: 500;
+    text-transform: lowercase! important;
+    color: rgb(0, 0, 0)! important;
+}
+
+.footer-icon{
+    color: #003D7A;
+}
+
+footer{
+    margin-top: auto;
+}
+
+.team-photo {
+    padding: 6rem;
+    align-items: center;
+}
