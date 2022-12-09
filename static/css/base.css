@@ -69,8 +69,11 @@ body {
     top: 0;
     left: 0;
     position: fixed;
-    background: white;
     z-index: -1;
+}
+
+.display{
+    min-height: 500px;
 }
 
 a.category-badge > span.badge:hover {
