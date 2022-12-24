@@ -1,108 +1,410 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **MS5 - EXECUStore**
 
-Welcome adam-blakeney,
+## **[View the Live Website Here!](https://execustore.herokuapp.com/)** ##
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Image](media/mockup.png)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## **Code Institute Milestone 4 Project - Full Stack Frameworks Django**
+The project has been undertaken to build an efficient, simple and accessible online retail website. The site will enable users to purchase products, register as a user and access user only content. The site will also be fully functioning with payment application stripe.
 
-## Gitpod Reminders
+The project is based around 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The structure for the site is focused on an ecommerce site that is fully functioning with user authentication and a payment process. The site is designed to be fully responsive and function on a wide range of devices.
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+# Table of Contents:
 
-Another blue button should appear to click: _Open Browser_.
+# **UX**
+## User Stories
+----------------
+In this project there are three groups of target users. They include general users, the admin and site owner and club members. The user stories for each group are defined below.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+__Applicable to all users__
+- As a user, I want to be able to quickly understand the purpose of the site
+- As a user, I need to be able to navigate around the page in a standard format
+- As a user, I would like to see products that I can purchase without signing up to become a member of the page
+- As a user, I would like to know where the company is based and the team behind it.
+- As a user, I require the ability to see my cart, how much the total about is and what products have been added.
+- As a user, I would like the ability to register for more interesting topics.
+- As a user, the ability to purchase my products safely is a necessity. 
+- As a user, I require the need to be able to use the site on mobile, tablet and desktop.
 
-To log into the Heroku toolbelt CLI:
+__General user__
+- As a general user, I require to be able to view and use elements of the site without logging in.
+- As a general user, I would like to still have the option to follow the link to buy without registering an account.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+__Registered User__
+- As a club member, I would like access to content that a user who is not a member cannot access, for example a blog or playlists etc. 
+- As a club member, I require access to a profile where I can see my order history.
+- As a club member, I need a seamless ability to sign in and log out.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+__Admin Users__
+- As a Super-user, I require the ability to edit, add and delete products for sale and listings.
+- As a Super-user, I need to add to the club blog post section. 
 
-------
 
-## Release History
+## Strategy
+----------------
+__Project goals__
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+The aim of this project is present the company products in a simple and clear but professional way. It was important to create a user-friendly and approachable site with a modern design and feel. The products have to be presented in a clear and familar way. This makes the site more accessible to users who are new to the site and need to find information quickly.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+The features and content of the site therefore had to include;
+- Product Titles, Descriptions and Prices.
+- Familar genres and types.
+- An approachable user interface and registration/login functionality.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+__User goals__ 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+The user goals will be met by enabling the user get access to the products, purchasing and blogs in a clear and concise format. The users require the ability to quickly search for their topic and filter out the irrelevant information. The users goals will be achieved through a landing page featuring nav links, a search element and registration/login option. There will also be links to the club section which is for registered users only.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Scope 
+----------------
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+The site will be built for purpose and the content should be accesible and user friendly. The scope therefore includes:
+- A landing page featuring nav links and topics clearly displayed.
+- The ability to learn about the company and what products available.
+- An ability to search from the landing page, access a user profile and login/register.
+- A log in function where the user inputs username and password.
+- A register function, the user will input relevant details and create a profile.
+- A profile page, displaying the order history of the user and the previous saved shipping detail.
+- An ability to add products to cart and checkout safely and securley.
+- An registered-access only element that displays blogs and news etc.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Structure
+----------------
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+The structure of the site is built around the main landing page where the user can navigate and search through the page.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+1. **Landing Page**
+- Simple landing page, with carosuel showing links and relevant images.
+- A navbar that directs users to product pages, blogs and profiles.
+- Nav elements will also have a modal search and active cart element.
+- The footer of the page will diplay some info about the company and further nav elements to social media etc.
+2. **Log In/Register Page**
+- This page enables the user to input a username and password.
+- The page will link to a register page where the user can register details.
+3. **Profile Page**
+- This page displays the user profile with their order history and shipping details.
+4. **Products Page**
+- This page displays filtered products and enables the user to click to find out more information.
+- The product cards will show images and names, genres and pricing.
+5. **Products Detail**
+- The detail page will display product descriptions and pricing.
+- This page will enable the user to add the product to their cart.
+- The detail will also display if the product is in stock or not.
+6. **Checkout Page**
+- The checkout enables the user to pay for their items and add shipping details relevant to their order.
+- This will be a safe secure checkout using stripe.
+7. **Blog Page**
+- The blog/ club will display only to users who are registered.
+- The content will be relevant to the company goals and areas of interest.
 
-------
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
+## Skeleton 
+----------------
+### **Wireframes** ###
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+The Skeleton of the project design was built utilising [Wireframes](https://www.Wireframes.com/). 
 
-**How will this affect me?**
+The overall basic design breakpoints can be seen below:
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+![Wireframes](/media/.png)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### **Changes to initial wireframes** ###
+A number of design edits were made throughout the project with the purpose of increased userability and clarity. These include:
+- The navbar will be consistent throughout the pages.
+- The landing page will feature an image carosuel that has relevant product links.
+ 
 
-**So….?**
+## Surface 
+----------------
+The site aimed to be dark with bright elements. The colour choice was to be dark so that nothing distracts from the key data and information. The light will be contrasted with bright yellow nav elements, white footer elements and a white background product page.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+**Colour Theme**
 
-**Can I opt out?**
+![Image](media/color.png)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+**Typography**
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+- The font used for both body and headings is [Lora](https://fonts.google.com/specimen/Lora). This font was chosen for its professionalism and clarity.
+I wanted to bring a modern design feel to the site and utilising a font that is widely used was effective.
+The site also has 'Sans Serif' as an alternative font.
+- The main logo or title is [Playfair](https://fonts.google.com/specimen/Playfair)
 
-**Anything more?**
+# **Features**
+----------------
+## 1. Landing Page
+-----------------
+- The landing page features a carosuel view with three slides displaying relevant background photos and links. The page features a modal search bar to enable users to search through the site. The nav displays a user profile icon that links to log in and registration. When logged in that will change to profile and log out etc. The user will also see their cart with the total amount.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
+----------------------
+## 2. Profile Page
+----------------------
+- The profile page features the users order history and shipping details that are previously used. There are options for the user to edit their details and save for future use.
 
-Happy coding!
+---------------------
+## 3. Login and Register Features
+---------------------
+- The login page is simple and displays prompts for the user to input their username/email and password. The site also features a link to register if the user has not yet done so. The registration page is simple and prompts username and emails, as well as passwords.
+---------------------
+## 4. Products, Detail and Bag Page
+---------------------
+**Products**
+- The products page features cards that display the products information and pricing. The site is fully responsive and also features a filter element so that users can filter from most expensive or A-Z etc.
+- Each product links to their product detail page.
+
+**Product Detail**
+- The product detail page features an accordion displaying a product description and then a breakdown of products details.
+- This page enables the user to add a product to their cart and navigate to continue shopping.
+
+**Bag**
+- The bag page displays the items the user has placed in their bag.
+- There is the ability to add more quantity to the products if the user requires to do so.
+- The total cost is displayed, along with shipping costs and indivdual costs.
+- The page links to a secure checkout.
+
+---------------------
+## 5. Checkout Page
+---------------------
+- The checkout is a secure page with a payment form and a stripe function.
+- The card input element will display red if there is a card error or green if the card is accepted.
+- The user can also go back and adjust their bag if need be.
+
+# **Technologies**
+## Database
+---------------
+Two relational databases were used to create this site - during production SQLite was used and then Postgres was used for the deployed Heroku version.
+
+The database model is extended from Django-Allauth, which enables user authentication, email and password verification functionality.
+
+The database functionality: 
+- Registered users and emails feed into the User profile.
+- Models for genres, condition, category are linked to the products.
+- Once an order is created the user profile and product data is linked in the orderline item.
+- The blog is a standalone model, only utilised as an add-on for registered users.
+
+The content is broken down in clear descriptions with text inputs from the forms. The images are uploaded directly. The naming convention was kept concise and relevant to the site.
+
+The schema is seen below:
+
+![Database Design](/media/.png)
+
+
+## Languages
+---------------
+For this project two languages were used:
+- [HTML](https://www.w3schools.com/html/#:~:text=HTML%20is%20the%20standard%20markup,learn%20%2D%20You%20will%20enjoy%20it!)
+- [CSS](https://www.w3schools.com/css/)
+- [Javascript](https://www.javascript.com/)
+- [Python](https://www.python.org/)
+
+## Libraries, Frameworks and Technologies
+---------------
+
+- [Bootstrap](https://bootstrap.com/) - Bootstrap was used to for its easy to use grid and repsonsive layout. Elelments of the navbar, cards and forms were taken from the site.
+
+- [Coolors](https://coolors.co) - Used to create colour palette and test colour themes.
+
+- [Google Fonts](https://fonts.google.com/) - Google font 'Lato' was included in the project.
+
+- [Font Awesome](https://fontawesome.com/) - All icons used throughout the project come from fontawesome.
+
+- [JQuery](https://jquery.com/) - Used for aspects of userability.
+
+- [Django](https://www.djangoproject.com/) - The main build of the site is around Django.
+
+- [Mock-Up Generator](https://techsini.com/multi-mockup/index.php) - Used for title photo.
+
+- [Heroku](https://id.heroku.com/login) - Used for site deployment.
+
+- [AWS](https://aws.amazon.com/) - Used for file storage.
+
+## Workspace and Version Control
+--------------------
+- [Github](https://github.com/) - The project is hosted on Github and the live website is worked through Github pages.
+
+- [Gitpod](https://www.gitpod.io/) - The project used Gitpod IDE for build and development. 
+
+# **Testing**
+## Code Validators 
+---------------
+A number of code validation techniques were utilised to ensure proper testing of site. 
+For HTML and CSS, I used the [W3C Markup Validator](https://validator.w3.org) and [W3C CSS Validation Services](https://jigsaw.w3.org/css-validator/). 
+See below for results.
+
+- HTML: All sites pass validation.
+- CSS: No errors. 
+
+
+## Javascript
+--------------
+A combination of [JSHint](https://jshint.com/) and manual testing was completed on the javascript to ensure adequate quality. 
+- No errors found in manual test. Basic javascript from Code Institute Project Ado project.
+
+## Python
+--------------
+Python was manually tested and functioned well. Some indentation issues and line length issues arose.
+
+Please note the line-length and indentation issues have been fixed where possible, however, for clarity and ease of use some line lengths have been left to be greater than the standard 79 character limit. Please not that this is done for readability and productivity. Where possible they have been edited to be PEP8 compliant, but other instances have been left for contextual reasons. For example, a comment explaining why the element is required. 
+
+## Responsive Elements 
+--------------
+
+The responsivity of the page was tested primarily using [Google Chrome Dev Tools]() and manual resizing of windows. The test provided positive results for each 
+device option. The responsive breakpoints and resizing worked throughout the site. The site was shared with colleagues and friends and tested 
+on their devices. The site worked well on all devices tested and there was no problem with browser compatibility found during these tests.
+
+  
+## Search Accuracy and Functionality
+--------------
+Manual testing was completed and the following results were found:
+
+- The search function worked well.
+- The add, edit and delete functions completed their required tasks and were easy to use.
+- The login and register functions were tested and performed well.
+
+## UX User Story Test
+--------------
+The user stories previously laid out in the UX Design section are tested, to ensure that project achieves the user goals.
+
+__Applicable to all users__
+- As a user, I want to be able to quickly understand the purpose of the site
+  - The user lands on an informative site.
+- As a user, I need to be able to navigate around the page in a standard format
+  - The nav bar is clear and structured in a familar format.
+- As a user, I would like to see products that I can purchase without signing up to become a member of the page
+  - I can view all products without registering an account. 
+- As a user, I would like to know where the company is based and the team behind it.
+   - A brief introduction to the team is clear in the footer.
+- As a user, I require the ability to see my cart, how much the total about is and what products have been added.
+  - I can see my cart and the total amount
+- As a user, I would like the ability to register for more interesting topics.
+  - I can register and view blogsposts.
+- As a user, the ability to purchase my products safely is a necessity. 
+  - The secure checkout functions properly.
+- As a user, I require the need to be able to use the site on mobile, tablet and desktop.
+  - The site a has good responsive elements.
+
+__General user__
+- As a general user, I require to be able to view and use elements of the site without logging in.
+  - I can view all core elements of the site without the need to log in.
+- As a general user, I would like to still have the option to follow the link to buy without registering an account.
+  - I can purchase products without being a member of the site. 
+
+__Registered User__
+- As a club member, I would like access to content that a user who is not a member cannot access, for example a blog or playlists etc. 
+  - As a club member I get access to the blog.
+- As a club member, I require access to a profile where I can see my order history.
+  - I can see order history and shipping details.
+- As a club member, I need a seamless ability to sign in and log out.
+  - I can log out and log in similar to standard practice.
+
+__Admin Users__
+- As a Super-user, I require the ability to edit, add and delete products for sale and listings.
+  - Admin has full CRUD functionality.
+- As a Super-user, I need to add to the club blog post section. 
+  - Admin can add blogpost.
+
+
+
+
+
+# Deployment 
+
+The following section shows a brief overview of project deployment. For more in-depth review please refer to the relevant documentation. 
+
+## Github Pages Deployment:
+The project is deployed to GitHub Pages. To deploy the site follow the instruction below.
+1. In GitHub navigate to the []().
+2. Locate '_Settings_', navigate to '_Source_' and select _Master Branch_ from the dropdown and click _Save_.
+3. The site will be published and confirmation shown on the page.
+
+## Forking The Repository:
+To create a fork of the Repository simply:
+1. Navigate to the []().
+2. Select '_Fork_' on the right hand corner of the page.
+
+## Creating a local clone:
+1. In GitHub navigate to the []().
+2. Above the file list select '_Code_' with the download icon. 
+3. To clone select the copy icon at the far right side of URL.
+4. Open your terminal in respective IDE, and edit working directory to the desired location.
+5. Type `git clone` and paste copied URL.
+6. Select Enter and local clone will be created. 
+
+For more specific information relating to the clone follow this [link.](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+
+## Heroku Deployment:
+This project is deployed using Heroku.
+
+1. ### Requirements and Procfile
+- In the GitPod terminal, type pip3 freeze --local > requirements.txt to create your requirements file.
+- Create your Procfile and insert the following code: web: gunicorn kafe-analog.wsgi:application
+
+2. ### Creating Heroku App
+- Log into Heroku
+- Select 'Create New App' from your dashboard
+- Choose an app name
+- Select the appropriate region based on your location
+- Click 'Create App'
+
+3. ### Connecting to GitHub
+- From the dashboard, click the 'Deploy'
+- Go to 'Deployment Method' and choose 'GitHub'
+- Locate your repository by name , click 'Connect'
+ 
+4. ### Environment Variables
+- Click the 'Settings' tab towards the top of the page
+- Go to 'Reveal Config Vars':
+  - Input your relevant variable names.
+- The Config Vars are as follows:
+  - DATABASE_URL (Database URL)
+  - SECRET_KEY (secret key)
+  - STRIPE_PUBLIC_KEY (Stripe public key)
+  - STRIPE_SECRET_KEY (Stripe secret key)
+  - STRIPE_WH_KEY (Stripe webhook key if using)
+  - USE_AWS (set True)
+
+5. ### Deployment
+- 'Manual Deploy' choose the master branch and click 'Deploy Branch'.
+- Click 'Open App' from the top of the page.
+
+## AWS Set Up:
+The static files and images are hosted via AWS using the following steps. Note this is an overview. For more indepth detail please follow the steps provided via the links.
+
+- Sign up and set up for [AWS](https://aws.amazon.com/).
+- Create AWS S3 Bucket, with a bucket and access policy, featuring a user and group. Please follow the outlined instructions [here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html).
+- Django and AWS Database can be connected via the information provided [here](https://django-storages.readthedocs.io/en/latest/backends/amazon-S3.html).
+- Once this process is complete add the AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY to the Heroku config vars.
+
+Please note this is an overview of AWS set up. Please refer to the [AWS S3 Documentation](https://docs.aws.amazon.com/s3/index.html) for further insight.
+
+
+# **Credits**
+## Content
+--------------
+ - The project backend structure came from the Code Institute Boutique Ado Project.
+ - The structure of the site from Bootstrap.
+ - All images for products come from google search of high quality images.
+ - Unsplash was used for free high quality images.
+
+## Media 
+--------------
+- All icons were sourced from [font awesome](https://fontawesome.com/)
+
+## Acknowledgements
+-------------- 
+Thanks to the [Code Institute](https://codeinstitute.net) for the tutorials and resources. 
