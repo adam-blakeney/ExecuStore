@@ -20,7 +20,7 @@ The structure for the site is focused on an ecommerce site that is fully functio
 # **UX**
 ## User Stories
 ----------------
-In this project there are three groups of target users. They include general users, the admin and site owner and club members. The user stories for each group are defined below.
+In this project there are three groups of target users. They include user, the admin and members. The user stories for each group are defined below.
 
 __Applicable to all users__
 - As a user, I want to be able to quickly understand the purpose of the site
@@ -28,22 +28,19 @@ __Applicable to all users__
 - As a user, I would like to see products that I can purchase without signing up to become a member of the page
 - As a user, I would like to know where the company is based and the team behind it.
 - As a user, I require the ability to see my cart, how much the total about is and what products have been added.
-- As a user, I would like the ability to register for more interesting topics.
 - As a user, the ability to purchase my products safely is a necessity. 
 - As a user, I require the need to be able to use the site on mobile, tablet and desktop.
-
-__General user__
-- As a general user, I require to be able to view and use elements of the site without logging in.
 - As a general user, I would like to still have the option to follow the link to buy without registering an account.
 
-__Registered User__
-- As a club member, I would like access to content that a user who is not a member cannot access, for example a blog or playlists etc. 
-- As a club member, I require access to a profile where I can see my order history.
-- As a club member, I need a seamless ability to sign in and log out.
+
+__Member__
+- As a member, I require access to a profile where I can see my order history.
+- As a member, I need a seamless ability to sign in and log out.
+- As a member, I want to be able to save my info so I dont need to re-enter for future orders
 
 __Admin Users__
 - As a Super-user, I require the ability to edit, add and delete products for sale and listings.
-- As a Super-user, I need to add to the club blog post section. 
+- As a Super-user, I need to add to be able to access orders. 
 
 
 ## Strategy

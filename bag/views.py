@@ -36,10 +36,10 @@ def edit_bag(request, item_id):
 
     if quantity > 0:
         bag[item_id] = quantity
-        messages.success(request, f'Added {product.name} to your cart!')
+        messages.success(request, f'Updated {product.name} in your orders!')
     else:
         bag.pop(item_id)
-        messages.info(request, f'Removed {product.name} from your cart!')
+        messages.info(request, f'Removed {product.name} from your orders!')
 
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
