@@ -386,3 +386,7 @@ footer{
 .row{
     margin: 0;
 }
+
+.btn-color {
+    background-color: #666666;
+}
