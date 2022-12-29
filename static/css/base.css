@@ -6,10 +6,10 @@ html {
 body {
     background: url('/media/homepage-image.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
     color: #3F0D12;
     font-family: 'Lora';
     font-style: italic;
+    box-sizing: border-box;
 }
 
 /* from Bulma */
@@ -242,20 +242,12 @@ input[name='q']::placeholder {
     .header-container {
         padding-top: 116px;
     }
-
-    body {
-        height: calc(100vh - 116px);
-    }
 }
 
 
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
-    }
-
-    body {
-        height: calc(100vh - 116px);
     }
 
     .display-4.logo-font.text-black {
@@ -389,4 +381,8 @@ footer{
 
 .icon1{
     color: #003D7A;
+}
+
+.row{
+    margin: 0;
 }
