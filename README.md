@@ -107,6 +107,33 @@ The structure of the site is built around the main landing page where the user c
 - The content will be relevant to the company goals and areas of interest.
 
 
+## SEO
+----------------
+1. **Keywords**
+- This was my list of short-tail words to begin my SEO
+- (Watches, suits, shirts, clothes, hats, glasses, belts, work clothes, formal, Executive clothes, Timeless)
+
+- This was my list od long-tail key words
+- (Clothes for office work, formal event clothes ideas, Luxury clothes presents, shirts for office,
+    gift ideas for work, suit and shirts for weddings)
+
+- My SEO keyword list for EXECUStore is:
+  Executive clothes, formal event clothes, luxury clothes, office attire.
+
+2. **Implementation**
+To implement my SEO words, you will see a repetiton of these words implemented through the site. But i wanted ot avoid "stuffing" and over repetition, so I have kept the implemention to a ratio in which the words can be caught but doesnt ruin the aesthethic to the users. 
+
+3. **Files**
+  I created a sitemap.xml file using [sitemap](https://www.xml-sitemaps.com/)
+  and a robots.txt in the root level of my code.
+
+4. **Regeistering**
+ I then registered my sitemap with google [here](https://search.google.com/search-console/welcome)
+
+5. **Testing**
+  Testing of my SEO can be found in my *testing* chapter below
+
+
 
 ## Skeleton 
 ----------------
@@ -273,6 +300,15 @@ Manual testing was completed and the following results were found:
 - The add, edit and delete functions completed their required tasks and were easy to use.
 - The login and register functions were tested and performed well.
 
+## SEO testing
+I tested my robots.txt file using this google console [site](https://support.google.com/webmasters/answer/6062598?hl=en) and corrected any erros in the file.
+
+
+## WEBSITE testing
+- I used google lighthouse to analyse and audit my site and here are the results.
+![image](media/lighthouse.jpg)
+
+
 ## UX User Story Test
 --------------
 The user stories previously laid out in the UX Design section are tested, to ensure that project achieves the user goals.
@@ -314,8 +350,6 @@ __Admin Users__
   - Admin has full CRUD functionality.
 - As a Super-user, I need to add to the club blog post section. 
   - Admin can add blogpost.
-
-
 
 
 
