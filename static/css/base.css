@@ -238,12 +238,11 @@ input[name='q']::placeholder {
     }
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
     .small {
         display: none;
     }
-}
-
+} */
 
 @media (max-width: 991px) {
     .header-container {
@@ -404,3 +403,6 @@ footer{
 }
 	        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+.brandingLogo{
+    display: none;
+}
