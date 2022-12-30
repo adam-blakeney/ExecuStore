@@ -395,10 +395,8 @@ footer{
 /*--mailchimp*/
 #mc_embed_signup{
     background:#C2C2C2;
-    clear:left;
-    font:14px Helvetica,Arial,sans-serif;
-    width:400px;
     padding: 0;
+    margin-left: -20px !important; 
 }
 	        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
