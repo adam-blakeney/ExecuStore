@@ -373,7 +373,7 @@ footer{
 }
 
 .team-photo {
-    padding: 4rem;
+    padding: 1.5rem;
     align-items: center;
 }
 
@@ -391,10 +391,14 @@ footer{
     background-color: #666666;
 }
 
+#privacy {
+    text-transform: uppercase;
+    text-align: center;
+}
 
 /*--mailchimp*/
-#mc_embed_signup{
-    background:#C2C2C2;
+#mc_embed_signup {
+    background: #C2C2C2;
     padding: 0;
     margin-left: -20px !important; 
 }
