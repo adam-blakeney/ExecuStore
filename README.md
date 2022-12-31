@@ -4,14 +4,12 @@
 
 ![Image](media/mockup.png)
 
-## **Code Institute Milestone 4 Project - Full Stack Frameworks Django**
+## **Code Institute Milestone 5 Project - Full Stack Frameworks Django**
 The project has been undertaken to build an efficient, simple and accessible online retail website. The site will enable users to purchase products, register as a user and access user only content. The site will also be fully functioning with payment application stripe.
 
-The project is based around 
+The project is based around a fictional high end goods supplier. Aimed at the consumer looking for luxury tailored goods. The company is called EXECUStore and supplies high end goods from suits to wathces.
 
 The structure for the site is focused on an ecommerce site that is fully functioning with user authentication and a payment process. The site is designed to be fully responsive and function on a wide range of devices.
-
-
 
 
 
@@ -33,10 +31,10 @@ __Applicable to all users__
 - As a general user, I would like to still have the option to follow the link to buy without registering an account.
 
 
-__Member__
-- As a member, I require access to a profile where I can see my order history.
-- As a member, I need a seamless ability to sign in and log out.
-- As a member, I want to be able to save my info so I dont need to re-enter for future orders
+__registered user__
+- As a registered user, I require access to a profile where I can see my order history.
+- As a registered user, I need a seamless ability to sign in and log out.
+- As a registered user, I want to be able to save my info so I dont need to re-enter for future orders
 
 __Admin Users__
 - As a Super-user, I require the ability to edit, add and delete products for sale and listings.
@@ -57,7 +55,7 @@ The features and content of the site therefore had to include;
 
 __User goals__ 
 
-The user goals will be met by enabling the user get access to the products, purchasing and blogs in a clear and concise format. The users require the ability to quickly search for their topic and filter out the irrelevant information. The users goals will be achieved through a landing page featuring nav links, a search element and registration/login option. There will also be links to the club section which is for registered users only.
+The user goals will be met by enabling the user get access to the products, purchasing and blogs in a clear and concise format. The users require the ability to quickly search for their topic and filter out the irrelevant information. The users goals will be achieved through a landing page featuring nav links, a search element and registration/login option.
 
 
 
@@ -69,11 +67,9 @@ The site will be built for purpose and the content should be accesible and user 
 - The ability to learn about the company and what products available.
 - An ability to search from the landing page, access a user profile and login/register.
 - A log in function where the user inputs username and password.
-- A register function, the user will input relevant details and create a profile.
+- A register function, the user will input specified details and create a profile.
 - A profile page, displaying the order history of the user and the previous saved shipping detail.
 - An ability to add products to cart and checkout safely and securley.
-- An registered-access only element that displays blogs and news etc.
-
 
 
 ## Structure
@@ -83,10 +79,10 @@ The structure of the site is built around the main landing page where the user c
 
 
 1. **Landing Page**
-- Simple landing page, with carosuel showing links and relevant images.
+- Simple landing page, with feature image.
 - A navbar that directs users to product pages, blogs and profiles.
-- Nav elements will also have a modal search and active cart element.
-- The footer of the page will diplay some info about the company and further nav elements to social media etc.
+- Nav elements will also have a search and current cart element and profile.
+- The footer of the page will diplay some info about the company and further nav elements to social media and map etc.
 2. **Log In/Register Page**
 - This page enables the user to input a username and password.
 - The page will link to a register page where the user can register details.
@@ -94,17 +90,14 @@ The structure of the site is built around the main landing page where the user c
 - This page displays the user profile with their order history and shipping details.
 4. **Products Page**
 - This page displays filtered products and enables the user to click to find out more information.
-- The product cards will show images and names, genres and pricing.
+- The product cards will show images and names and pricing.
 5. **Products Detail**
 - The detail page will display product descriptions and pricing.
-- This page will enable the user to add the product to their cart.
+- This page will enable the user to add the product to their cart and select quantity.
 - The detail will also display if the product is in stock or not.
 6. **Checkout Page**
 - The checkout enables the user to pay for their items and add shipping details relevant to their order.
 - This will be a safe secure checkout using stripe.
-7. **Blog Page**
-- The blog/ club will display only to users who are registered.
-- The content will be relevant to the company goals and areas of interest.
 
 
 ## SEO
@@ -143,18 +136,20 @@ The Skeleton of the project design was built utilising [Wireframes](https://www.
 
 The overall basic design breakpoints can be seen below:
 
-![Wireframes](/media/.png)
+![Wireframes](/media/wireframes1.png)
+![Wireframes](/media/wireframes2.png)
+![Wireframes](/media/wireframes3.png)
 
 
 ### **Changes to initial wireframes** ###
 A number of design edits were made throughout the project with the purpose of increased userability and clarity. These include:
-- The navbar will be consistent throughout the pages.
-- The landing page will feature an image carosuel that has relevant product links.
+- The navbar will be consistent throughout the pages and will change depending on screen size but keep the same content.
+- The product layout was made more user firnedly being able to display more products at a time.
  
 
 ## Surface 
 ----------------
-The site aimed to be dark with bright elements. The colour choice was to be dark so that nothing distracts from the key data and information. The light will be contrasted with bright yellow nav elements, white footer elements and a white background product page.
+The site aimed to be dark with bright elements. The colour choice was to be dark so that nothing distracts from the key data and information. The light will be contrasted deep blue icons, white footer elements and a white background product cards.
 
 **Colour Theme**
 
@@ -171,7 +166,8 @@ The site also has 'Sans Serif' as an alternative font.
 ----------------
 ## 1. Landing Page
 -----------------
-- The landing page features a carosuel view with three slides displaying relevant background photos and links. The page features a modal search bar to enable users to search through the site. The nav displays a user profile icon that links to log in and registration. When logged in that will change to profile and log out etc. The user will also see their cart with the total amount.
+- The landing page features a feature image with an introduction to the site. The page features a modal search bar to enable users to search through the site. The page has the nav bar which includes, products tab , accounts tab for registration ,login or logout. It also includes the cash register icon to show the amount items reserverd will cost and gives access to the users bag.
+On mobile screens this becomes a dropdown menu with burger icon.
 
 
 ----------------------
@@ -187,30 +183,30 @@ The site also has 'Sans Serif' as an alternative font.
 ## 4. Products, Detail and Bag Page
 ---------------------
 **Products**
-- The products page features cards that display the products information and pricing. The site is fully responsive and also features a filter element so that users can filter from most expensive or A-Z etc.
+- The products page features product cards that display the products information and pricing. The site is fully responsive and also features a filter element so that users can filter from most expensive or A-Z etc.
 - Each product links to their product detail page.
 
 **Product Detail**
-- The product detail page features an accordion displaying a product description and then a breakdown of products details.
-- This page enables the user to add a product to their cart and navigate to continue shopping.
+- The product detail page features an larger image along with a description and then a breakdown of products details.
+- This page enables the user to add a product to their cart or select how many and navigate to continue shopping.
 
 **Bag**
-- The bag page displays the items the user has placed in their bag.
-- There is the ability to add more quantity to the products if the user requires to do so.
+- The bag page displays the items and amount the user has placed in their bag.
+- There is the ability to add more quantity to the products or remove.
 - The total cost is displayed, along with shipping costs and indivdual costs.
-- The page links to a secure checkout.
+- The page links to a secure checkout powered by stripe.
 
 ---------------------
 ## 5. Checkout Page
 ---------------------
 - The checkout is a secure page with a payment form and a stripe function.
 - The card input element will display red if there is a card error or green if the card is accepted.
-- The user can also go back and adjust their bag if need be.
+- The user can also go back and adjust their bag if needs be.
 
 # **Technologies**
 ## Database
 ---------------
-Two relational databases were used to create this site - during production SQLite was used and then Postgres was used for the deployed Heroku version.
+For my database i used the ElephantSQL tiny turtle package database.
 
 The database model is extended from Django-Allauth, which enables user authentication, email and password verification functionality.
 
@@ -218,19 +214,14 @@ The database functionality:
 - Registered users and emails feed into the User profile.
 - Models for genres, condition, category are linked to the products.
 - Once an order is created the user profile and product data is linked in the orderline item.
-- The blog is a standalone model, only utilised as an add-on for registered users.
 
 The content is broken down in clear descriptions with text inputs from the forms. The images are uploaded directly. The naming convention was kept concise and relevant to the site.
-
-The schema is seen below:
-
-![Database Design](/media/.png)
 
 
 ## Languages
 ---------------
-For this project two languages were used:
-- [HTML](https://www.w3schools.com/html/#:~:text=HTML%20is%20the%20standard%20markup,learn%20%2D%20You%20will%20enjoy%20it!)
+For this project these languages were used:
+- [HTML](https://www.w3schools.com/html/)
 - [CSS](https://www.w3schools.com/css/)
 - [Javascript](https://www.javascript.com/)
 - [Python](https://www.python.org/)
@@ -238,22 +229,14 @@ For this project two languages were used:
 ## Libraries, Frameworks and Technologies
 ---------------
 
-- [Bootstrap](https://bootstrap.com/) - Bootstrap was used to for its easy to use grid and repsonsive layout. Elelments of the navbar, cards and forms were taken from the site.
-
-- [Coolors](https://coolors.co) - Used to create colour palette and test colour themes.
-
-- [Google Fonts](https://fonts.google.com/) - Google font 'Lato' was included in the project.
-
+- [Bootstrap](https://bootstrap.com/) - Bootstrap was used to for its easy to use grid and repsonsive layout.
+- [Coolors](https://coolors.co) - Used to create my own colour palette.
+- [Google Fonts](https://fonts.google.com/) - Google font 'Lora' was included in the project.
 - [Font Awesome](https://fontawesome.com/) - All icons used throughout the project come from fontawesome.
-
 - [JQuery](https://jquery.com/) - Used for aspects of userability.
-
 - [Django](https://www.djangoproject.com/) - The main build of the site is around Django.
-
-- [Mock-Up Generator](https://techsini.com/multi-mockup/index.php) - Used for title photo.
-
+- [Mock-Up Generator](https://mockup.photos/) - Used for title photo.
 - [Heroku](https://id.heroku.com/login) - Used for site deployment.
-
 - [AWS](https://aws.amazon.com/) - Used for file storage.
 
 ## Workspace and Version Control
@@ -266,7 +249,8 @@ For this project two languages were used:
 ## Code Validators 
 ---------------
 A number of code validation techniques were utilised to ensure proper testing of site. 
-For HTML and CSS, I used the [W3C Markup Validator](https://validator.w3.org) and [W3C CSS Validation Services](https://jigsaw.w3.org/css-validator/). 
+For HTML and CSS, I used the [W3C Markup Validator](https://validator.w3.org) and
+[W3C CSS Validation Services](https://jigsaw.w3.org/css-validator/). 
 See below for results.
 
 - HTML: All sites pass validation.
@@ -276,29 +260,30 @@ See below for results.
 ## Javascript
 --------------
 A combination of [JSHint](https://jshint.com/) and manual testing was completed on the javascript to ensure adequate quality. 
-- No errors found in manual test. Basic javascript from Code Institute Project Ado project.
+- No errors found in manual test. 
+Basic javascript from Code Institute Boutique Ado project.
 
 ## Python
 --------------
 Python was manually tested and functioned well. Some indentation issues and line length issues arose.
 
-Please note the line-length and indentation issues have been fixed where possible, however, for clarity and ease of use some line lengths have been left to be greater than the standard 79 character limit. Please not that this is done for readability and productivity. Where possible they have been edited to be PEP8 compliant, but other instances have been left for contextual reasons. For example, a comment explaining why the element is required. 
+Please note the line-length and indentation issues have been fixed where possible, however, for clarity and ease of use some line lengths have been left to be greater than the standard 79 character limit. Please note that this is done for readability and productivity. Where possible they have been edited to be PEP8 compliant.
 
 ## Responsive Elements 
 --------------
 
-The responsivity of the page was tested primarily using [Google Chrome Dev Tools]() and manual resizing of windows. The test provided positive results for each 
-device option. The responsive breakpoints and resizing worked throughout the site. The site was shared with colleagues and friends and tested 
-on their devices. The site worked well on all devices tested and there was no problem with browser compatibility found during these tests.
+The responsivity of the page was tested primarily using [Google Chrome Dev Tools]() and manual resizing of windows. The test provided positive results for each device option. The responsive breakpoints and resizing worked throughout the site. The site was shared with colleagues and friends and tested on their devices. The site worked well on all devices tested and there was no problem with browser compatibility found during these tests.
 
   
-## Search Accuracy and Functionality
+## Search Accuracy and Sorting
 --------------
 Manual testing was completed and the following results were found:
 
 - The search function worked well.
 - The add, edit and delete functions completed their required tasks and were easy to use.
 - The login and register functions were tested and performed well.
+- Large errors found with sort function but have been rectified with change of model 'price' from a char to deciaml.
+  No issues found after.
 
 ## SEO testing
 I tested my robots.txt file using this google console [site](https://support.google.com/webmasters/answer/6062598?hl=en) and corrected any erros in the file.
@@ -314,18 +299,16 @@ I tested my robots.txt file using this google console [site](https://support.goo
 The user stories previously laid out in the UX Design section are tested, to ensure that project achieves the user goals.
 
 __Applicable to all users__
-- As a user, I want to be able to quickly understand the purpose of the site
+- As a user, I want to be able to quickly understand the purpose of the site.
   - The user lands on an informative site.
-- As a user, I need to be able to navigate around the page in a standard format
+- As a user, I need to be able to navigate around the page in a standard format.
   - The nav bar is clear and structured in a familar format.
-- As a user, I would like to see products that I can purchase without signing up to become a member of the page
+- As a user, I would like to see products that I can purchase without registering.
   - I can view all products without registering an account. 
 - As a user, I would like to know where the company is based and the team behind it.
-   - A brief introduction to the team is clear in the footer.
+   - A brief introduction to the team is clear in the footer along with a map to location.
 - As a user, I require the ability to see my cart, how much the total about is and what products have been added.
-  - I can see my cart and the total amount
-- As a user, I would like the ability to register for more interesting topics.
-  - I can register and view blogsposts.
+  - I can see my cart and the total amount and alter it
 - As a user, the ability to purchase my products safely is a necessity. 
   - The secure checkout functions properly.
 - As a user, I require the need to be able to use the site on mobile, tablet and desktop.
@@ -338,12 +321,10 @@ __General user__
   - I can purchase products without being a member of the site. 
 
 __Registered User__
-- As a club member, I would like access to content that a user who is not a member cannot access, for example a blog or playlists etc. 
-  - As a club member I get access to the blog.
-- As a club member, I require access to a profile where I can see my order history.
+- As a registered user, I require access to a profile where I can see my order history.
   - I can see order history and shipping details.
-- As a club member, I need a seamless ability to sign in and log out.
-  - I can log out and log in similar to standard practice.
+- As a registered user, I need a seamless ability to sign in and log out.
+  - I can log out and log in with minimal effort
 
 __Admin Users__
 - As a Super-user, I require the ability to edit, add and delete products for sale and listings.
@@ -431,6 +412,7 @@ Please note this is an overview of AWS set up. Please refer to the [AWS S3 Docum
  - The structure of the site from Bootstrap.
  - All images for products come from google search of high quality images.
  - Unsplash was used for free high quality images.
+ 
 
 ## Media 
 --------------
@@ -439,3 +421,4 @@ Please note this is an overview of AWS set up. Please refer to the [AWS S3 Docum
 ## Acknowledgements
 -------------- 
 Thanks to the [Code Institute](https://codeinstitute.net) for the tutorials and resources. 
+- Especially all the amazing Tutors at CI for their patience and help:)
