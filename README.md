@@ -41,6 +41,27 @@ __Admin Users__
 - As a Super-user, I need to add to be able to access orders. 
 
 
+## Business Model
+----------------
+My business is based are the B2C business model. 
+- What is B2C?
+Business to Consumer (B2C) is the method of doing commerce where businesses trade and transact directly with end customers who buy the product for consumption.
+
+![image](media/b2c.png)
+
+- EXECUStore is a product based B2C company. So witht his in mind what are our marketing strategies and intentions?
+
+- Our intentions and ethos
+EXECUStore is primarily foccused on offereing customers not only the higest end products made in the most sustainable way and with the most sustainable materials. It also aims to offer the best purchasing experience for the customer. We aim to give the consumer a very tailored experience and attempts to bring the personality back into e-commerce.
+
+- Our marketing stratigies
+EXECUStore impliments the use of social media as the main source of marketing. It does so for 2 reasons, as it is very low cost and with a huge audience it is also directly managable. Unlike paid advertisment companies which can be very expensive and when you stop paying for the service the marketing completely stops with socail media it can still run in the background although it is better to keep a fresh upto date approach with this.
+Here is EXECUStores Facebook page which can also be found in the sites footer.
+
+![image](media/facebook.jpg)
+![image](media/facebook2.jpg)
+
+
 ## Strategy
 ----------------
 __Project goals__
