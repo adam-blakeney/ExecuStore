@@ -443,3 +443,8 @@ Please note this is an overview of AWS set up. Please refer to the [AWS S3 Docum
 -------------- 
 Thanks to the [Code Institute](https://codeinstitute.net) for the tutorials and resources. 
 - Especially all the amazing Tutors at CI for their patience and help:)
+
+## additons
+- custom 404
+- agile tool
+- 
