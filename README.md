@@ -78,6 +78,12 @@ __User goals__
 
 The user goals will be met by enabling the user get access to the products, purchasing and blogs in a clear and concise format. The users require the ability to quickly search for their topic and filter out the irrelevant information. The users goals will be achieved through a landing page featuring nav links, a search element and registration/login option.
 
+## Agile tool
+- I used agile as a process in creating this site , Agile methodology is a “step by step” dynamic focused on short-term visibility but never losing the long-term product goal.
+- I follwed the kanban method, the Kanban method is organised on a Kanban board, divided into columns, showing every flow within the software project. As the development evolves, the information contained in the table changes, and whenever a new task comes into play, a new “card” is created.
+- You can find my kanban board in the following link [here](https://github.com/users/adam-blakeney/projects/2/views/1).
+
+![image](media/agile.png)
 
 
 ## Scope 
@@ -119,6 +125,16 @@ The structure of the site is built around the main landing page where the user c
 6. **Checkout Page**
 - The checkout enables the user to pay for their items and add shipping details relevant to their order.
 - This will be a safe secure checkout using stripe.
+
+
+## Admin 
+- I set up my admin panel to allow editing, adding and removing of products and the categories.
+![image](/media/admin.png)
+
+
+## Custom 404 
+- I altered the error page into my custom 404 page with an aim to help the user get back to the main page of the site to help retain users.
+![image](/media/404.png)
 
 
 ## SEO
@@ -444,7 +460,3 @@ Please note this is an overview of AWS set up. Please refer to the [AWS S3 Docum
 Thanks to the [Code Institute](https://codeinstitute.net) for the tutorials and resources. 
 - Especially all the amazing Tutors at CI for their patience and help:)
 
-## additons
-- custom 404
-- agile tool https://github.com/users/adam-blakeney/projects/2/views/1
-- admin
