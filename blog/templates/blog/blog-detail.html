@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col">
+                
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container-fluid px-4 product-page">
+        <div class="row blog-row">
+            <div class=" col-12 col-md-6 my-auto">
+                <h2>{{ blog.blog_title}}</h2>
+                {% if request.user.is_superuser %}
+                            <small class="ml-3">
+                                    <a href="{% url 'edit_blog' blog.id %}">Edit</a> | 
+                                    <a class="text-danger" href="{% url 'delete_blog' blog.id %}">Delete</a>
+                            </small>
+                {% endif %}
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="{{ blog.image.url }}" alt="blog-img" class="img-thumbnail">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="blog-content">
+                    {{ blog.blog_content }}
+                </p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
