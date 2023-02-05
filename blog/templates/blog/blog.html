@@ -20,12 +20,17 @@
                 <p>Here you'll find our latest reviews, news and upcoming products. All curated specially for our EXECUMemebers.</p>
             </div>
         </div>
+        <div class="row space">
+            <a href="{% url 'add_blog' %}" class="col-12 col-md-6 p-3 my-auto btn-outline-green rounded">
+                <span class="text-uppercase">Add a blog post!</span>
+            </a>
+        </div>
         <div class="row">
             {% for blog in blog %}
             <a class="col-12 col-md-6" href="{% url 'blog_detail' blog.id %}">
                 <div class="">
                     <div class="card blog-card bg-dark text-light">
-                        <img class="card-img" src="{{ blog.image.url }}" alt="Card image" style="opacity:0.4;">
+                        <img class="card-img" src="{{ blog.image.url }}" alt="Card image" style="opacity:0.2;">
                         <div class="card-img-overlay">
                           <h5 class="card-title">{{ blog.blog_title }}</h5>
                         </div>
