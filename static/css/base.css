@@ -284,6 +284,11 @@ input[name='q']::placeholder {
 
 /*-------------product css*/
 
+.product-page {
+    color: black;
+    padding-top: 3.5rem;
+}
+
 .product-shipping {
     color: grey;
     font-weight: 200;
