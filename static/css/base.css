@@ -271,7 +271,7 @@ input[name='q']::placeholder {
     }
 }
 
-@media screen and (max-width: 903px) {
+@media screen and (max-width: 955px) {
     .nav-link {
         padding-right: 0.5rem;
         padding-left: 0.5rem;
