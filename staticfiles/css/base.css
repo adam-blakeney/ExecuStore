@@ -1,0 +1,464 @@
+html {
+    height: 100%;
+}
+
+
+body {
+    color: #3F0D12;
+    font-family: 'Lora';
+    font-style: italic;
+    box-sizing: border-box;
+}
+
+.landing-image {
+    opacity: 0.6;
+}
+
+
+.landing-container {
+    margin: 0;
+    height: 60% !important;
+    width: 100%;
+}
+
+.landing-link {
+    text-decoration: none;
+    color: #003D7A! important;
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-font {
+    text-transform: uppercase;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+.shop-now-button {
+    min-width: 260px;
+}
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+.btn-outline-black {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
+.btn-outline-green {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid green;
+    max-width: fit-content;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #222;
+    color: white;
+}
+
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+.bg-black {
+    background-color: #000 !important;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: whitesmoke;
+    z-index: -1;
+}
+
+.display{
+    min-height: 500px;
+}
+
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
+input[name='q']::placeholder {
+    color: #aab7c4;
+}
+
+/* ------------------------------- bootstrap toasts */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent; 
+    border-bottom: 10px solid black;
+    position: absolute;
+    top: -10px;
+    right: 36px;
+}
+
+
+.arrow-primary {
+    border-bottom-color: #007bff !important;
+}
+
+.arrow-secondary {
+    border-bottom-color: #6c757d !important;
+}
+
+.arrow-success {
+    border-bottom-color: #28a745 !important;
+}
+
+.arrow-danger {
+    border-bottom-color: #dc3545 !important;
+}
+
+.arrow-warning {
+    border-bottom-color: #ffc107 !important;
+}
+
+.arrow-info {
+    border-bottom-color: #17a2b8 !important;
+}
+
+.arrow-light {
+    border-bottom-color: #f8f9fa !important;
+}
+
+.arrow-dark {
+    border-bottom-color: #343a40 !important;
+}
+
+.bag-notification-wrapper {
+    height: 60px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+/* -------------------------------- All auth */
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem; /* mt-4 */
+    color: #6c757d; /* text-secondary */
+}
+
+.allauth-form-inner-content input {
+    border-color: #000;
+    border-radius: 0;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+	display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: #fff;
+    background-color: #222;
+    border-color: #222;
+}
+
+.allauth-form-inner-content a {
+	color: #003D7A; /* text-info */
+}
+
+
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+}
+
+/* @media (max-width: 991px) {
+    .small {
+        display: none;
+    }
+} */
+
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    .display-4.logo-font.text-black {
+        font-size: 2rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    #delivery-banner h4 {
+        font-size: 1.1rem;
+    }
+
+    .btn.btn-outline-black.rounded-0,
+    .btn.btn-black.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-black.rounded-0.btn-lg,
+    .btn.btn-black.rounded-0.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
+    }
+}
+
+@media screen and (max-width: 903px) {
+    .nav-link {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        color: #3F0D12;
+    }
+}
+
+
+/*-------------product css*/
+
+.product-page {
+    color: black;
+    padding-top: 3.5rem;
+    padding-bottom: .5rem;
+}
+
+.product-shipping {
+    color: grey;
+    font-weight: 200;
+}
+
+.size{
+    max-height: 250px;
+}
+
+
+.text-inform {
+    color: #003D7A !important;
+}
+
+.text-color {
+    color: #3F0D12 !important;
+}
+
+.nav-header {
+    background-color: #C2C2C2;
+    color: #3F0D12! important;
+}
+/*-----navbar*/
+
+
+.nav-link {
+    color: #3F0D12! important;
+}
+
+.main-logo-link {
+    font-family: 'Lora', sans-serif;
+    font-weight: 500;
+    color: #3F0D12! important;
+}
+
+.bg-color{
+    background-color: #C2C2C2;
+}
+
+.bg-color-dark{
+    background-color: #666666;
+}
+
+.navbar-color{
+    background-color: #C2C2C2;
+}
+
+.navbar-toggler {
+    padding: .6rem .6rem;
+    font-size: 1rem;
+}
+
+.backcolor {
+    background-color: #E0E0E0;
+}
+
+
+/*------footer*/
+
+.info-container {
+    background-color: #C2C2C2;
+    height: fit-content ;
+}
+
+.info-style {
+    padding: 6rem;
+    font-weight: 300;
+}
+
+.footer-style {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.footer-logo-link {
+    font-family: 'Lora', sans-serif;
+    font-weight: 500;
+    text-transform: lowercase! important;
+    color: rgb(0, 0, 0)! important;
+}
+
+.footer-icon{
+    color: #003D7A;
+}
+
+footer{
+    margin-top: auto;
+}
+
+.team-photo {
+    padding: 1.5rem;
+    align-items: center;
+}
+
+/*-----touchups*/
+
+.icon1{
+    color: #003D7A;
+}
+
+.row{
+    margin: 0;
+}
+
+.btn-color {
+    background-color: #666666;
+}
+
+#privacy {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*--mailchimp*/
+#mc_embed_signup {
+    background: #C2C2C2;
+    padding: 0;
+    margin-left: -20px !important; 
+}
+	        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+.brandingLogo{
+    display: none;
+}
+
+
+/*-------blog*/
+
+.blog-content {
+    padding: 1.2rem;
+    white-space: pre-line;
+}
+
+.blog-row {
+    padding-top: 15px;
+}
+
+.space{
+    padding-bottom: 1rem;
+}
+
+/*--------modal*/
+
+.modal {
+    z-index: 9999999999;
+}
+
+.modal-backdrop.show {
+    z-index: auto;
+}
