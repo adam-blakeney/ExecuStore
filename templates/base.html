@@ -38,6 +38,8 @@
     {% endblock %}
 
     <title>EXECUStore {% block extra_title %}{% endblock %}</title>
+    <meta name="title" content="EXECUStore">
+    <meta name="description" content="The leader in designer ware, join the EXECUClub">
   </head>
   <body>
       <header class="container-fluid fixed-top nav-header">
@@ -260,7 +262,7 @@
           let option = {
               animation: true,
               autohide: true,
-              delay: 5000,
+              delay: 10,
           }
           let bsToast = new bootstrap.Toast(toastEl, option)
           bsToast.show();

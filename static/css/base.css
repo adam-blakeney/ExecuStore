@@ -4,12 +4,26 @@ html {
 
 
 body {
-    background: url('/media/homepage-image.jpg') no-repeat center center fixed;
-    background-size: cover;
     color: #3F0D12;
     font-family: 'Lora';
     font-style: italic;
     box-sizing: border-box;
+}
+
+.landing-image {
+    opacity: 0.6;
+}
+
+
+.landing-container {
+    margin: 0;
+    height: 60% !important;
+    width: 100%;
+}
+
+.landing-link {
+    text-decoration: none;
+    color: #003D7A! important;
 }
 
 /* from Bulma */
@@ -239,10 +253,6 @@ input[name='q']::placeholder {
         right: 0;
         left: 0;
         z-index: 1030;
-    }
-
-    .header-container {
-        padding-top: 164px;
     }
 }
 
