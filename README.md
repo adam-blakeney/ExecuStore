@@ -254,6 +254,16 @@ The database functionality:
 
 The content is broken down in clear descriptions with text inputs from the forms. The images are uploaded directly. The naming convention was kept concise and relevant to the site.
 
+CRUD functioality design for database.
+What is CRUD?
+
+- Create, or add new entries
+- Read, retrieve, search, or view existing entries
+- Update, or edit existing entries
+- Delete, deactivate, or remove existing entries
+
+This can been seen in my project in the product management page and also in the blog page. Where admin and users can create a blog, edit that blog, search for old blog, edit and update their blogs and the delete their blog posts.
+
 
 ## Languages
 ---------------
@@ -366,8 +376,8 @@ __Registered User__
 __Admin Users__
 - As a Super-user, I require the ability to edit, add and delete products for sale and listings.
   - Admin has full CRUD functionality.
-- As a Super-user, I need to add to the club blog post section. 
-  - Admin can add blogpost.
+- As a Super-user, I need to add to the EXECUClub post section. 
+  - Admin can add, edit, update, delete a blogpost.
 
 
 
@@ -376,32 +386,23 @@ __Admin Users__
 The following section shows a brief overview of project deployment. For more in-depth review please refer to the relevant documentation. 
 
 ## Github Pages Deployment:
-The project is deployed to GitHub Pages. To deploy the site follow the instruction below.
-1. In GitHub navigate to the []().
-2. Locate '_Settings_', navigate to '_Source_' and select _Master Branch_ from the dropdown and click _Save_.
-3. The site will be published and confirmation shown on the page.
+# Publishing from a branch
+- Make sure the branch you want to use as your publishing source already exists in your repository.
+- On GitHub, navigate to your site's repository.
+- Under your repository name, click  Settings.
+- In the "Code and automation" section of the sidebar, click  Pages.
+- Under "Build and deployment", under "Source", select Deploy from a branch.
+- Under "Build and deployment", under "Branch", use the None or Branch drop-down menu and select a publishing source.
+- Optionally, use the drop-down menu to select a folder for your publishing source.
+- Click Save.
 
-## Forking The Repository:
-To create a fork of the Repository simply:
-1. Navigate to the []().
-2. Select '_Fork_' on the right hand corner of the page.
-
-## Creating a local clone:
-1. In GitHub navigate to the []().
-2. Above the file list select '_Code_' with the download icon. 
-3. To clone select the copy icon at the far right side of URL.
-4. Open your terminal in respective IDE, and edit working directory to the desired location.
-5. Type `git clone` and paste copied URL.
-6. Select Enter and local clone will be created. 
-
-For more specific information relating to the clone follow this [link.](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+source [github](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 
 ## Heroku Deployment:
 This project is deployed using Heroku.
 
 1. ### Requirements and Procfile
 - In the GitPod terminal, type pip3 freeze --local > requirements.txt to create your requirements file.
-- Create your Procfile and insert the following code: web: gunicorn kafe-analog.wsgi:application
 
 2. ### Creating Heroku App
 - Log into Heroku
@@ -448,7 +449,6 @@ Please note this is an overview of AWS set up. Please refer to the [AWS S3 Docum
  - The project backend structure came from the Code Institute Boutique Ado Project.
  - The structure of the site from Bootstrap.
  - All images for products come from google search of high quality images.
- - Unsplash was used for free high quality images.
  
 
 ## Media 
