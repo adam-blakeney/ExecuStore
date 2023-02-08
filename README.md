@@ -125,6 +125,9 @@ The structure of the site is built around the main landing page where the user c
 6. **Checkout Page**
 - The checkout enables the user to pay for their items and add shipping details relevant to their order.
 - This will be a safe secure checkout using stripe.
+7. **Blog Page**
+- The EXECUClub will display only to users who are registered.
+- The content will be a way to create a communtiy and advertise the comapny
 
 
 ## Admin 
@@ -240,6 +243,11 @@ On mobile screens this becomes a dropdown menu with burger icon.
 - The card input element will display red if there is a card error or green if the card is accepted.
 - The user can also go back and adjust their bag if needs be.
 
+---------------------
+## 5. Blog Page
+---------------------
+- The blog page is an interactive page for the users to post and get involved with the communtity and company.
+
 # **Technologies**
 ## Database
 ---------------
@@ -293,6 +301,35 @@ For this project these languages were used:
 - [Gitpod](https://www.gitpod.io/) - The project used Gitpod IDE for build and development. 
 
 # **Testing**
+
+## User Stories
+
+# Site user:
+
+- Easily use and understand the website.
+    The website has a pretty standard UI (user interface), which makes it easy for people to use.
+- Create account where they can see their orders.
+    With the help of allauth, the user can create an account, and on the "profile" page the users can see their previous orders.
+- See products available. Including status and options.
+    The products page shows which products exist and all the product description. If the user is logged in, they can also add a product to their bag.
+- Add and remove products in the cart.
+  The user can add products to the cart from the product_details page. They can edit the items in their bag on the "bag" page.
+- Search for products.
+    The user can search for products through the search-bar modal. When this is done, the program searches for matches in the product database and only the products with a match to the search term shows up.
+- Navigate categories and get relevant results.
+    In the shop dropdown the user can choose to either show all products, or show the products in a specific category. Either clothing or watches and these can be sorted using the sort feature.
+- Pay for products.
+    This e-shop uses stripe for payments. The user write their card info, and stripe handles the transaction.
+
+
+
+# Admin user:
+
+- Add/edit/remove products.
+    Through the admin page the admin has the option to easily add, edit and delete products. They just need to input the information about the product and add the product in the sel explanitory fields. 
+- See and cancel orders Change stock availabiltiy.
+    On the page where the admin can manipulate the products, there is a field for each product called "availability". Here the admin can input the available stock.
+
 ## Code Validators 
 ---------------
 A number of code validation techniques were utilised to ensure proper testing of site. 
@@ -326,11 +363,25 @@ The responsivity of the page was tested primarily using [Google Chrome Dev Tools
 --------------
 Manual testing was completed and the following results were found:
 
-- The search function worked well.
-- The add, edit and delete functions completed their required tasks and were easy to use.
-- The login and register functions were tested and performed well.
-- Large errors found with sort function but have been rectified with change of model 'price' from a char to deciaml.
-  No issues found after.
+  - Tested the models by creating instances. This was to make sure the fields looked and worked as expected.
+  - Tested if the database and the frontend was propperly connected by trying to show part of the data in the frontend.
+  - Made sure the search bar works by searching with various key words and ensuring that only expected products showed up in results.
+  - For the add to bag and remove from pag i used "print to console" method so i could see my code was carrying out the desired result.
+  - The checkout delivery forms system was tested similarly. but also i checked it was not possible to access it with an empty shopping bag. I did that by trying to go to the checkout without anything in the bag.
+  - The payment system was tested by making trial payments with the Stripe "test card". After making the test payment, I checked on the dashboard to see if it went thru without issues or, if not, what the issue was.
+  - I tested if the toasts worked as expected by performing acctions that should trigger them (e.g adding an item to the bag). I made sure all toasts would display for right trigger. There is an associated bug with this.
+  - To test the 404 page, I changed DEBUG to False and tried to go to a non existent extention.
+  - I tested all the front end admin functionality by trying to use it. As an example, i created a product, edited it, and then deleted it. I made sure the order information and messages showed up where they should and when they should by trying to get access to them both logged in and logged out. I also tried it as an admin user, and as a standard user.
+
+
+## Bugs
+During the creation of my e-commerce site i encounted alot of issues and bugs here are a couple noteable ones.
+- Toasts 
+  When i upgraded my bootstap verion my toasts stopped working, i found work around code for this but then seen that my close button was clunky looking and didnt work. At this point i decided to assess my options. I could try and fix the close button and then use CSS to make it look better but i came to the conclusion that the close button is more of a hinderance to the user so i used a fade function to close the toast automatical after an approptriate time.
+- Increment Decrement Buttons
+  I ran into an issue where on my bag and product detail page my +- buttons were either not functioning at all or either would let a negative amount of product be selected. This was a very difficult fix for me and it came down to use of classes and ids.
+  
+
 
 ## SEO testing
 I tested my robots.txt file using this google console [site](https://support.google.com/webmasters/answer/6062598?hl=en) and corrected any erros in the file.
