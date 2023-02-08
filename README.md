@@ -359,7 +359,7 @@ Please note the line-length and indentation issues have been fixed where possibl
 The responsivity of the page was tested primarily using [Google Chrome Dev Tools]() and manual resizing of windows. The test provided positive results for each device option. The responsive breakpoints and resizing worked throughout the site. The site was shared with colleagues and friends and tested on their devices. The site worked well on all devices tested and there was no problem with browser compatibility found during these tests.
 
   
-## Search Accuracy and Sorting
+## Manual Testing
 --------------
 Manual testing was completed and the following results were found:
 
@@ -436,18 +436,19 @@ __Admin Users__
 
 The following section shows a brief overview of project deployment. For more in-depth review please refer to the relevant documentation. 
 
-## Github Pages Deployment:
-# Publishing from a branch
-- Make sure the branch you want to use as your publishing source already exists in your repository.
-- On GitHub, navigate to your site's repository.
-- Under your repository name, click  Settings.
-- In the "Code and automation" section of the sidebar, click  Pages.
-- Under "Build and deployment", under "Source", select Deploy from a branch.
-- Under "Build and deployment", under "Branch", use the None or Branch drop-down menu and select a publishing source.
-- Optionally, use the drop-down menu to select a folder for your publishing source.
-- Click Save.
-
-source [github](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+## Heroku Deployment:
+# Publishing 
+- Create an account at Heroku.
+- Create a list of dependencies in a text file named requirements (pip3 freeze > requirements.txt).
+- Create an app by clicking the "create a new app" button found on the dashboard.
+- Choose your region and click "create app"
+- Find the Config Vars section and add potential files that you cannot upload to github. For        
+  example API credentials.
+- Add buildpacks (below Config Vars)
+- Choose to deploy from GitHub.
+- Connect your account and choose a repository to deploy from.
+- Choose either Automatic deployment.
+- Add DISABLE_COLLECTSTATIC as a Cvar.
 
 ## Heroku Deployment:
 This project is deployed using Heroku.
@@ -479,9 +480,17 @@ This project is deployed using Heroku.
   - STRIPE_WH_KEY (Stripe webhook key if using)
   - USE_AWS (set True)
 
-5. ### Deployment
-- 'Manual Deploy' choose the master branch and click 'Deploy Branch'.
-- Click 'Open App' from the top of the page.
+
+## ElephantSQl setup:
+- Create an account on ElephantSQL. Do not forget to confirm your e-mail.
+- Click on "create a new instance" (it is a green button at the top right corner).
+- Give the information about the instance.
+- Choose a plan (tiny turtle is free).
+- Select a region and data center. 
+- Create instance.
+- Copy the url and add it to the Config Vars as DATABASE_URL.
+- Migrate the models to the database.
+
 
 ## AWS Set Up:
 The static files and images are hosted via AWS using the following steps. Note this is an overview. For more indepth detail please follow the steps provided via the links.
