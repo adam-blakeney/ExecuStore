@@ -279,8 +279,12 @@ input[name='q']::placeholder {
         padding: 30px;
     }
 
-    .carousel-caption {
-        padding-bottom: 1.25rem;
+    .carousel-text {
+        padding-bottom: 1.2rem;
+    }
+
+    .text-down {
+        margin-bottom: -1rem;
     }
 }
 
