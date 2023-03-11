@@ -520,3 +520,20 @@ Please note this is an overview of AWS set up. Please refer to the [AWS S3 Docum
 Thanks to the [Code Institute](https://codeinstitute.net) for the tutorials and resources. 
 - Especially all the amazing Tutors at CI for their patience and help:)
 
+
+# Latest Update 3/23
+## Contact Form
+![Image](media/contact.png)
+
+
+
+
+-On recomedation of adding more custom models to my project i decided to add a contact form to my page as it falls inline with the model of my site with adding to the possibilty of letting the custom get a more custom experice and making it easier for them to speak to the tailors directly.
+
+-How it works.
+The user clicks on the contact form in the profile drop down.
+The user fills out the form.
+The user clicks send message, and they will recieve a message either being success or failure.
+The site owners go into the admin section and go to the contact section where all the details will be there.
+This allows all staff members to view the message and get the email to respond to the customer.
+
