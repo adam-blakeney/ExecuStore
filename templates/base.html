@@ -73,9 +73,11 @@
                       {% endif %}
                       <li><a href="{% url 'profile' %}" class="dropdown-item">Profile</a></li>
                       <li><a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a></li>
+                      <li><a href="{% url 'Contact' %}" class="nav-link">Contact Us</a></li>
                     {% else %}
                       <li><a href="{% url 'account_signup' %}" class="dropdown-item">Register</a></li>
                       <li><a href="{% url 'account_login' %}" class="dropdown-item">Login</a></li>
+                      <li><a href="{% url 'Contact' %}" class="nav-link">Contact Us</a></li>
                     {% endif %}
                   </ul>
                 </div>
@@ -153,9 +155,11 @@
                       {% endif %}
                       <span><a href="{% url 'profile' %}" class="nav-link">Profile</a></span>
                       <span><a href="{% url 'account_logout' %}" class="nav-link">Logout</a></span>
+                      <span><a href="{% url 'Contact' %}" class="nav-link">Contact Us</a></span>
                     {% else %}
                       <span><a href="{% url 'account_signup' %}" class="nav-link">Register</a></span>
                       <span><a href="{% url 'account_login' %}" class="nav-link">Login</a></span>
+                      <span><a href="{% url 'Contact' %}" class="nav-link">Contact Us</a></span>
                     {% endif %}
                 </li>
                 <li class="nav-item">
@@ -203,9 +207,11 @@
                       {% endif %}
                       <span class="dropdown-item"><a href="{% url 'profile' %}" class="nav-link">Profile</a></span>
                       <span class="dropdown-item"><a href="{% url 'account_logout' %}" class="nav-link">Logout</a></span>
+                      <span class="dropdown-item"><a href="{% url 'Contact' %}" class="nav-link">Contact Us</a></span>
                     {% else %}
                       <span class="dropdown-item"><a href="{% url 'account_signup' %}" class="nav-link">Register</a></span>
                       <span class="dropdown-item"><a href="{% url 'account_login' %}" class="nav-link">Login</a></span>
+                      <span class="dropdown-item"><a href="{% url 'Contact' %}" class="nav-link">Contact Us</a></span>
                     {% endif %}
                 </li>
                 <li class="nav-item">
