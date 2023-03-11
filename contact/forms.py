@@ -5,7 +5,7 @@ from .models import Contact
 class ContactForm(forms.ModelForm):
 
     class Meta:
-        model = Blog
+        model = Contact
         fields = '__all__'
 
     def __init__(self, *args, **kwargs):
