@@ -19,7 +19,8 @@
                 <hr class="w-100">
             </div>
         </div>
-<form class="display" method="post" action="#">
+<form class="display" method="post">
+    {% csrf_token %}
     <div class="row">
         <div class="col">
       <label for="exampleFormControlInput1">Email address</label>
@@ -41,6 +42,9 @@
       <label for="exampleFormControlTextarea1">Your Message</label>
       <textarea class="form-control" name="subject" id="exampleFormControlTextarea1" placeholder="Write your message to EXECUStore here" rows="8"></textarea>
     </div>
+    </div>
+    <div class="row button-row mt-1">
+    <button class="btn btn-black btn-block" type="submit" value="submit">Send Message</button>
     </div>
 </form>
     </div>
