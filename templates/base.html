@@ -73,11 +73,11 @@
                       {% endif %}
                       <li><a href="{% url 'profile' %}" class="dropdown-item">Profile</a></li>
                       <li><a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a></li>
-                      <li><a href="{% url 'Contact' %}" class="nav-link">Contact Us</a></li>
+                      <li><a href="{% url 'Contact' %}" class="dropdown-item">Contact Us</a></li>
                     {% else %}
                       <li><a href="{% url 'account_signup' %}" class="dropdown-item">Register</a></li>
                       <li><a href="{% url 'account_login' %}" class="dropdown-item">Login</a></li>
-                      <li><a href="{% url 'Contact' %}" class="nav-link">Contact Us</a></li>
+                      <li><a href="{% url 'Contact' %}" class="dropdown-item">Contact Us</a></li>
                     {% endif %}
                   </ul>
                 </div>
